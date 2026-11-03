@@ -1,0 +1,46 @@
+{
+  "name": "food-buddy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run-dev.js",
+    "dev:server": "npm --prefix platform/server run dev",
+    "dev:client": "npm --prefix platform/client run dev",
+    "build": "npm --prefix platform/server run build && npm --prefix platform/client run build",
+    "build:server": "npm --prefix platform/server run build",
+    "build:client": "npm --prefix platform/client run build",
+    "start:server": "npm --prefix platform/server start",
+    "start:client": "npm --prefix platform/client start",
+    "seed": "npm --prefix platform/server run seed",
+    "typecheck": "npm --prefix platform/server run typecheck"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.1",
+    "morgan": "^1.10.0",
+    "razorpay": "^2.9.8",
+    "socket.io": "^4.8.3",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/compression": "^1.8.1",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
